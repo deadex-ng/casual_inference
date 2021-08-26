@@ -20,5 +20,11 @@ class VisualizeFeature():
             fig = px.histogram(df, x=x, color="diagnosis", marginal="box",hover_data=df.columns)
 
             fig.show()
-            
-        
+
+
+    def barplot(self,df:pd.DataFrame,title:str):
+        fig = px.bar(df.drop('diagnosis',axis=1).corrwith(df.diagnosis),title = title)
+
+        fig.show()
+
+
