@@ -4,7 +4,7 @@ import pandas as pd
 
 sys.path.append('../scripts')
 
-df = pd.read_csv(r"../data/mean_features.csv")
+df = pd.read_csv("../data/mean_features.csv")
 df.drop('Unnamed: 0',axis=1,inplace=True)
 
 from feature_viz import VisualizeFeature
