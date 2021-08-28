@@ -32,7 +32,7 @@ from IPython.display import Image
 from causalnex.structure.notears import from_pandas,from_pandas_lasso
 from causalnex.plots import plot_structure, NODE_STYLE, EDGE_STYLE
 
-df1  = pd.read_csv('data.csv')
+df1  = pd.read_csv('../data/data.csv')
 
 #select the top 6 most important features according to the RandomForest Classifier
 
